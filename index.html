@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor"></div>
+   <header>
+    <a href="#"><img src="src/club_logo_big-removebg-preview(1).png" class="logo" alt=""></a>
+    <div class="menuToggle"></div>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#events">Events</a></li>
+    </ul>
+   </header> 
+   
+   <!--Events section-->
+   <section class="events">
+
+   </section>
+</body>
+<script> 
+   let list = document.querySelectorAll('.nav li');
+    function active(){
+        list.forEach((i) =>
+        i.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((i) =>
+    i.addEventListener('click', active));
+
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+
+    menuToggle.onclick = function() {
+        header.classList.toggle('active');
+    } 
+
+    let cursor = document.querySelector("#cursor");
+    let body = document.querySelector('body');
+    document.addEventListener('mousemove', (e)=> {
+        cursor.style.top = e.pageY + 'px';
+        cursor.style.left = e.pageX + 'px';
+    })
+</script>
+</html>
