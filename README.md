@@ -1,6 +1,6 @@
 *to whom it may concern, meaning:*
 - Aman
-- Jhonny &
-- Abel
+- Abel &
+- Jhonny
 ___
 ## Wassup BITCHHHHHHEEEESSSS
